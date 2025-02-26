@@ -28,62 +28,82 @@ const products = [
     image: "/lovable-uploads/4d777d6a-6bbb-4a4f-bb67-d6cd3f50bf11.png",
     description: "Vibrant watch with artistic graffiti patterns",
   },
+  {
+    name: "Sugar Skull Watch",
+    price: 45.99,
+    image: "/lovable-uploads/29ed6208-ac20-42a5-a9c2-19b084e71a92.png",
+    description: "Bold red watch with festive sugar skull design",
+  },
+  {
+    name: "Tattoo Love Watch",
+    price: 43.99,
+    image: "/lovable-uploads/56a6f16e-e1dd-430c-8641-66ffd53e43d8.png",
+    description: "Classic tattoo art inspired watch with roses",
+  },
+  {
+    name: "Day of the Dead Watch",
+    price: 46.99,
+    image: "/lovable-uploads/dd6af5e4-9694-439a-a39f-8ee2c0a02d6c.png",
+    description: "Colorful floral and skull pattern watch",
+  },
 ];
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-doodle-gray">
-      <Navbar />
-      <main className="container mx-auto px-4 py-8">
-        {/* Hero Section */}
-        <h1 className="text-3xl font-medium mb-2 text-center">Doodle Store</h1>
-        <p className="text-gray-600 text-center mb-8">Handmade with love ♥</p>
+    <div className="min-h-screen doodle-pattern-bg">
+      <div className="bg-white/90 backdrop-blur-sm min-h-screen">
+        <Navbar />
+        <main className="container mx-auto px-4 py-8">
+          {/* Hero Section */}
+          <h1 className="text-3xl font-medium mb-2 text-center">Doodle Store</h1>
+          <p className="text-gray-600 text-center mb-8">Handmade with love ♥</p>
 
-        {/* About Section */}
-        <section className="mb-16 bg-white p-8 rounded-xl border-2 border-dashed border-gray-300">
-          <h2 className="text-2xl font-medium mb-4 text-center">About Doodle Tick</h2>
-          <div className="max-w-2xl mx-auto text-center">
-            <p className="text-gray-600 mb-4">
-              Welcome to Doodle Tick, where we transform ordinary watches into extraordinary pieces of wearable art! 
-              Each watch in our collection is carefully designed to bring joy and creativity to your everyday timekeeping.
-            </p>
-            <p className="text-gray-600">
-              Our unique watches feature hand-drawn designs, playful patterns, and vibrant colors that make telling time 
-              an artistic experience. Perfect for those who love to express their personality through their accessories!
-            </p>
-          </div>
-        </section>
+          {/* About Section */}
+          <section className="mb-16 bg-white/95 p-8 rounded-xl border-2 border-dashed border-gray-300">
+            <h2 className="text-2xl font-medium mb-4 text-center">About Doodle Tick</h2>
+            <div className="max-w-2xl mx-auto text-center">
+              <p className="text-gray-600 mb-4">
+                Welcome to Doodle Tick, where we transform ordinary watches into extraordinary pieces of wearable art! 
+                Each watch in our collection is carefully designed to bring joy and creativity to your everyday timekeeping.
+              </p>
+              <p className="text-gray-600">
+                Our unique watches feature hand-drawn designs, playful patterns, and vibrant colors that make telling time 
+                an artistic experience. Perfect for those who love to express their personality through their accessories!
+              </p>
+            </div>
+          </section>
 
-        {/* Products Section */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-medium mb-4 text-center">Our Watches</h2>
-          <ProductSlideshow products={products} />
-        </section>
+          {/* Products Section */}
+          <section className="mb-16">
+            <h2 className="text-2xl font-medium mb-4 text-center">Our Watches</h2>
+            <ProductSlideshow products={products} />
+          </section>
 
-        {/* Contact Section */}
-        <section className="bg-white p-8 rounded-xl border-2 border-dashed border-gray-300">
-          <h2 className="text-2xl font-medium mb-6 text-center">Contact Us</h2>
-          <div className="max-w-2xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="flex flex-col items-center p-4 bg-doodle-pink rounded-lg">
-                <Mail className="h-8 w-8 mb-2" />
-                <h3 className="font-medium mb-1">Email</h3>
-                <p className="text-sm text-center">hello@doodletick.com</p>
-              </div>
-              <div className="flex flex-col items-center p-4 bg-doodle-yellow rounded-lg">
-                <Phone className="h-8 w-8 mb-2" />
-                <h3 className="font-medium mb-1">Phone</h3>
-                <p className="text-sm text-center">+1 (555) 123-4567</p>
-              </div>
-              <div className="flex flex-col items-center p-4 bg-doodle-blue rounded-lg">
-                <MapPin className="h-8 w-8 mb-2" />
-                <h3 className="font-medium mb-1">Address</h3>
-                <p className="text-sm text-center">123 Doodle Street<br />Creativity City, DC 12345</p>
+          {/* Contact Section */}
+          <section className="bg-white/95 p-8 rounded-xl border-2 border-dashed border-gray-300">
+            <h2 className="text-2xl font-medium mb-6 text-center">Contact Us</h2>
+            <div className="max-w-2xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="flex flex-col items-center p-4 bg-doodle-pink rounded-lg">
+                  <Mail className="h-8 w-8 mb-2" />
+                  <h3 className="font-medium mb-1">Email</h3>
+                  <p className="text-sm text-center">hello@doodletick.com</p>
+                </div>
+                <div className="flex flex-col items-center p-4 bg-doodle-yellow rounded-lg">
+                  <Phone className="h-8 w-8 mb-2" />
+                  <h3 className="font-medium mb-1">Phone</h3>
+                  <p className="text-sm text-center">+1 (555) 123-4567</p>
+                </div>
+                <div className="flex flex-col items-center p-4 bg-doodle-blue rounded-lg">
+                  <MapPin className="h-8 w-8 mb-2" />
+                  <h3 className="font-medium mb-1">Address</h3>
+                  <p className="text-sm text-center">123 Doodle Street<br />Creativity City, DC 12345</p>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-      </main>
+          </section>
+        </main>
+      </div>
     </div>
   );
 };
