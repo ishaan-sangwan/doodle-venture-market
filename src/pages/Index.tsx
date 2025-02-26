@@ -1,6 +1,6 @@
 
 import Navbar from "@/components/Navbar";
-import ProductCard from "@/components/ProductCard";
+import ProductSlideshow from "@/components/ProductSlideshow";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 const products = [
@@ -57,11 +57,7 @@ const Index = () => {
         {/* Products Section */}
         <section className="mb-16">
           <h2 className="text-2xl font-medium mb-4 text-center">Our Watches</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {products.map((product) => (
-              <ProductCard key={product.name} {...product} />
-            ))}
-          </div>
+          <ProductSlideshow products={products} />
         </section>
 
         {/* Contact Section */}
