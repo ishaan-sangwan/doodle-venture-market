@@ -1,7 +1,5 @@
-
 import Navbar from "@/components/Navbar";
 import ProductSlideshow from "@/components/ProductSlideshow";
-import { Mail, Phone, MapPin } from "lucide-react";
 
 const products = [
   {
@@ -77,30 +75,6 @@ const Index = () => {
           <section className="mb-16">
             <h2 className="text-2xl font-medium mb-4 text-center">Our Watches</h2>
             <ProductSlideshow products={products} />
-          </section>
-
-          {/* Contact Section */}
-          <section className="bg-white/95 p-8 rounded-xl border-2 border-dashed border-gray-300">
-            <h2 className="text-2xl font-medium mb-6 text-center">Contact Us</h2>
-            <div className="max-w-2xl mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="flex flex-col items-center p-4 bg-doodle-pink rounded-lg">
-                  <Mail className="h-8 w-8 mb-2" />
-                  <h3 className="font-medium mb-1">Email</h3>
-                  <p className="text-sm text-center">hello@doodletick.com</p>
-                </div>
-                <div className="flex flex-col items-center p-4 bg-doodle-yellow rounded-lg">
-                  <Phone className="h-8 w-8 mb-2" />
-                  <h3 className="font-medium mb-1">Phone</h3>
-                  <p className="text-sm text-center">+1 (555) 123-4567</p>
-                </div>
-                <div className="flex flex-col items-center p-4 bg-doodle-blue rounded-lg">
-                  <MapPin className="h-8 w-8 mb-2" />
-                  <h3 className="font-medium mb-1">Address</h3>
-                  <p className="text-sm text-center">123 Doodle Street<br />Creativity City, DC 12345</p>
-                </div>
-              </div>
-            </div>
           </section>
         </main>
       </div>
