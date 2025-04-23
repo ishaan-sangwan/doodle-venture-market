@@ -4,119 +4,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Doodle Store</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://unpkg.com/lucide-icons/dist/umd/lucide.css" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <title>Lovable App</title>
   </head>
   <body>
-    <div class="min-h-screen doodle-pattern-bg">
-      <div class="backdrop-overlay">
-        <!-- Navigation -->
-        <nav class="navbar">
-          <div class="container">
-            <div class="nav-content">
-              <div class="logo">
-                <a href="index.html">
-                  <img src="/lovable-uploads/ff88dda9-efd0-472e-9245-bebf4cda6a94.png" alt="Doodle Store Logo">
-                </a>
-              </div>
-              <div class="nav-links">
-                <a href="#" class="nav-link">About Us</a>
-                <a href="#" class="nav-link">Contact Us</a>
-                <button class="cart-button">
-                  <span class="shopping-bag"></span>
-                  Cart (0)
-                </button>
-              </div>
-            </div>
-          </div>
-        </nav>
-
-        <main class="container">
-          <!-- Hero Section -->
-          <h1 class="hero-title">Doodle Store</h1>
-          <p class="hero-subtitle">Handmade with love ♥</p>
-
-          <!-- About Section -->
-          <section class="about-section">
-            <h2 class="section-title">About Doodle Tick</h2>
-            <div class="about-content">
-              <p>Welcome to Doodle Tick, where we transform ordinary watches into extraordinary pieces of wearable art! 
-                Each watch in our collection is carefully designed to bring joy and creativity to your everyday timekeeping.</p>
-              <p>Our unique watches feature hand-drawn designs, playful patterns, and vibrant colors that make telling time 
-                an artistic experience. Perfect for those who love to express their personality through their accessories!</p>
-            </div>
-          </section>
-
-          <!-- Products Section -->
-          <section class="products-section">
-            <h2 class="section-title">Our Watches</h2>
-            <div class="slideshow-container">
-              <button class="slide-button slide-prev" onclick="scrollSlides('left')">&lt;</button>
-              <div class="product-slider">
-                <div class="product-card">
-                  <div class="product-image">
-                    <img src="/lovable-uploads/147cc1dc-c88a-4d7b-9331-3f38860d670a.png" alt="Rainbow Hearts Doodle Watch">
-                  </div>
-                  <h3>Rainbow Hearts Doodle Watch</h3>
-                  <p>Playful watch featuring colorful hearts and doodle designs</p>
-                  <div class="product-footer">
-                    <span class="price">$39.99</span>
-                    <button class="add-to-cart">Add to Cart</button>
-                  </div>
-                </div>
-                <!-- Repeat product-card for each product -->
-                <div class="product-card">
-                  <div class="product-image">
-                    <img src="/lovable-uploads/91f1d82c-2be0-4709-b9f1-1aa294b38d5b.png" alt="Space Explorer Watch">
-                  </div>
-                  <h3>Space Explorer Watch</h3>
-                  <p>Cosmic-themed watch with planets and rockets</p>
-                  <div class="product-footer">
-                    <span class="price">$44.99</span>
-                    <button class="add-to-cart">Add to Cart</button>
-                  </div>
-                </div>
-                <!-- More product cards... -->
-              </div>
-              <button class="slide-button slide-next" onclick="scrollSlides('right')">&gt;</button>
-            </div>
-          </section>
-
-          <!-- Contact Section -->
-          <section class="contact-section">
-            <h2 class="section-title">Contact Us</h2>
-            <div class="contact-grid">
-              <div class="contact-card email">
-                <span class="icon mail"></span>
-                <h3>Email</h3>
-                <p>hello@doodletick.com</p>
-              </div>
-              <div class="contact-card phone">
-                <span class="icon phone"></span>
-                <h3>Phone</h3>
-                <p>+1 (555) 123-4567</p>
-              </div>
-              <div class="contact-card address">
-                <span class="icon map-pin"></span>
-                <h3>Address</h3>
-                <p>123 Doodle Street<br>Creativity City, DC 12345</p>
-              </div>
-            </div>
-          </section>
-        </main>
-      </div>
-    </div>
-
-    <script>
-      function scrollSlides(direction) {
-        const slider = document.querySelector('.product-slider');
-        const scrollAmount = direction === 'left' ? -400 : 400;
-        slider.scrollBy({
-          left: scrollAmount,
-          behavior: 'smooth'
-        });
-      }
-    </script>
+    <div id="root"></div>
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
